@@ -6,4 +6,4 @@ Apart from the original documentation at https://hackaday.io/project/161585-hect
 https://github.com/alesti/iso9001
 https://www.golem.de/news/hector-9000-nachgebaut-der-automatische-cocktail-mixer-aus-dem-3d-drucker-1901-138927.html
 
-I decided to do some changes on the design which are doucmented here
+I decided to do some changes on the design which are going to be doucmented here

@@ -1,4 +1,4 @@
 BOM
-"HONEYWELL ABPDRRT005","Preasure Sensor"
+"HONEYWELL ABPDRRT005","Preasure Sensor 5 V, +- 5 psi differential"
 PCA9685, "12 Bit PWM Driver"
 HX711, "24-Bit Analog-to-Digital Converter (ADC) for Weigh Scales"

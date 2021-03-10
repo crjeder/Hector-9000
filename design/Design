@@ -1,0 +1,25 @@
+The design is loosly based on Hector 9000 (https://hackaday.io/project/161585-hector-9000)
+
+Design Language (what you are going to use to solve the problems)
+- extruded aluminium profile (case)
+- Dibond (case)
+- 3D printed valve
+- presurized bottles
+- use as much commercially available parts as possible
+- food grade silicon tube
+- rubber / silicone plug
+- tropfblech rund
+- load cell / scale to control amount of liquid dispensed
+- star trek replicator like design https://static.wikia.nocookie.net/memoryalpha/images/f/fe/Galaxy-class_replicator.jpg/revision/latest?cb=20120725231632&path-prefix=en
+- Luftverteiler
+
+Design Chokepoints
+- Keep pressure in the bottles
+- easy cleaning
+- valve tightnes
+- valve mechanical durability
+- electricity 230, 5, 12, 24 V?
+
+Plugs
+25x22x17mm
+30x24x18mm

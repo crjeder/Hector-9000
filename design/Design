@@ -14,21 +14,20 @@ Hardware
 - star trek replicator like design https://static.wikia.nocookie.net/memoryalpha/images/f/fe/Galaxy-class_replicator.jpg/revision/latest?cb=20120725231632&path-prefix=en
 - Luftverteiler
 Software
-- Highlevel Rest API (Mixe Rezep JSON: 
-  Cocktail {
-            name: String,
-            glass: String,
-            category: String,
-            shaken_not_stirred: Bool,
-            ingredients: [
-                {
-                  "amount": Value,
-                  "name": String,
-                }
-             ]
-            garnish: String,
-            preparation: String,
-        }
+- "mid-level" Rest API (Mixe Rezep JSON: 
+   ingredients: [
+     {
+        "amount": Value,
+        "Liquid #": Value,
+     },
+     {
+        "amount": Value,
+        "Liquid #": Value,
+     },
+     :
+     :
+     ]
+   }
 - (W)Lan
 
 

@@ -1,6 +1,7 @@
 The design is loosly based on Hector 9000 (https://hackaday.io/project/161585-hector-9000)
 
 Design Language (what you are going to use to solve the problems)
+Hardware
 - extruded aluminium profile (case)
 - Dibond (case)
 - 3D printed valve
@@ -12,6 +13,24 @@ Design Language (what you are going to use to solve the problems)
 - load cell / scale to control amount of liquid dispensed
 - star trek replicator like design https://static.wikia.nocookie.net/memoryalpha/images/f/fe/Galaxy-class_replicator.jpg/revision/latest?cb=20120725231632&path-prefix=en
 - Luftverteiler
+Software
+- Highlevel Rest API (Mixe Rezep JSON: 
+  Cocktail {
+            name: String,
+            glass: String,
+            category: String,
+            shaken_not_stirred: Bool,
+            ingredients: [
+                {
+                  "amount": Value,
+                  "name": String,
+                }
+             ]
+            garnish: String,
+            preparation: String,
+        }
+- (W)Lan
+
 
 Design Chokepoints
 - Keep pressure in the bottles

@@ -8,6 +8,6 @@ https://www.golem.de/news/hector-9000-nachgebaut-der-automatische-cocktail-mixer
 
 I decided to do some changes on the design which are going to be doucmented here
 
-- [UI](https://github.com/crjeder/Hector-9000/edit/master/UI.md)
+- [UI](https://github.com/crjeder/Hector-9000/blob/master/UI.md)
 - Design
 - Technology

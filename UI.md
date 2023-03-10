@@ -1,3 +1,6 @@
+# Options
+- Fully integrated into the device
+- Use moblile phones to order drinks
 ## Input
 Mouse with scroll wheel
   - speed up scroll wheel:

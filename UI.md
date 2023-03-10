@@ -36,9 +36,8 @@ Traffic light:
 Mouse with scroll wheel
   - speed up scroll wheel:
     https://support.mozilla.org/de/questions/1019147
-## GUI:
+## GUI
   https://github.com/mikeyhogarth/cocktails
 
 ## Output
-
 HDMI Display (touch not necessary)

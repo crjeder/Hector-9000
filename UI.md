@@ -40,4 +40,4 @@ Mouse with scroll wheel
   https://github.com/mikeyhogarth/cocktails
 
 ## Output
-HDMI Display (touch not necessary)
+[HDMI Display](https://github.com/waveshare/LCD-show) (touch not necessary)

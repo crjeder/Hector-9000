@@ -10,4 +10,4 @@ I decided to do some changes on the design which are going to be doucmented here
 
 - [UI](https://github.com/crjeder/Hector-9000/blob/master/UI.md)
 - Design
-- Technology
+- [Technology](https://github.com/crjeder/Hector-9000/blob/master/Technology.md)

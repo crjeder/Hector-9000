@@ -1,0 +1,5 @@
+- Add emergency off
+- A normally open (only closed when powered) valve will release pressure if power is lost
+- Pressure is PID controlled
+- A solid state relay drives the 230 V (mains) connected pump
+- (optional) there is a presure tank as buffer

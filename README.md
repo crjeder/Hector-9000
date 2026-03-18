@@ -1,4 +1,5 @@
-# Hector-9000
+# Miximus Prime
+![miximus prime](images/miximus-prime.png)
 My build of the Hector 9000 cocktail mixing robot
 
 Apart from the original documentation at https://hackaday.io/project/161585-hector-9000 there are some other good builds on the web:

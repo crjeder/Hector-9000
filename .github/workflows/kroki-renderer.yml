@@ -1,0 +1,27 @@
+name: Kroki Render
+on:
+  push:
+    paths:
+      - 'diagrams/**' # Beobachtet einen speziellen Ordner für Diagramme
+
+jobs:
+  kroki-render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Kroki Render Action
+        uses: yuzutech/kroki-github-action@v1.1.0
+        with:
+          direction: "./diagrams" # Wo liegen deine Quelldateien?
+          output: "./images"      # Wo sollen die Bilder gespeichert werden?
+          format: "svg"           # SVG ist am schärfsten für GitHub
+
+      - name: Commit & Push changes
+        run: |
+          git config --local user.email "crjeder@gmail.com"
+          git config --local user.name "GitHub Action"
+          git add images/*
+          git commit -m "Update diagrams via Kroki" || exit 0
+          git push

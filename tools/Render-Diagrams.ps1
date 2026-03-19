@@ -95,5 +95,6 @@ foreach ($file in $files) {
 }
 
 Write-Host ""
-Write-Host "Done: $ok rendered, $failed failed." -ForegroundColor ($failed -gt 0 ? 'Yellow' : 'Green')
+$color = if ($failed -gt 0) { 'Yellow' } else { 'Green' }
+Write-Host "Done: $ok rendered, $failed failed." -ForegroundColor $color
 if ($failed -gt 0) { exit 1 }

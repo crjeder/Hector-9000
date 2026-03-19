@@ -1,0 +1,19 @@
+blockdiag {
+  orientation = portrait
+
+  mcu [label = "Control Logic", color = "pink"];
+  air [label ="Compressed Air", color = "orange"];
+  v [label = "Valves", color = "green"];
+  ui [label = "Display / Button", color = "lightblue"];
+  www [label = "JiggerU", color = "lightblue"];
+  s [label = "Sensors", color = "purple"]
+
+  www -> "CocktailBotHAL" -> "REST API" -> mcu;
+  mcu -> air;
+  mcu -> v;
+  mcu -> ui;
+  mcu -> s;
+
+  s -> "scales";
+  s -> "air pressure"
+}

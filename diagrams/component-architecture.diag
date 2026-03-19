@@ -7,8 +7,9 @@ blockdiag {
   ui [label = "Display / Button", color = "lightblue"];
   www [label = "Cocktail Browser", color = "lightblue"];
   s [label = "Sensors", color = "purple"]
-
-  www -> "REST API" -> mcu;
+  api [label = "REST API", color = "greenyellow"];
+  
+  www -> api -> mcu;
   mcu -> air;
   mcu -> v;
   mcu -> ui;

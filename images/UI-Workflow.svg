@@ -1,0 +1,99 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg viewBox="0 0 832 760" xmlns="http://www.w3.org/2000/svg" xmlns:inkspace="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs id="defs_block">
+    <filter height="1.504" id="filter_blur" inkspace:collect="always" width="1.1575" x="-0.07875" y="-0.252">
+      <feGaussianBlur id="feGaussianBlur3780" inkspace:collect="always" stdDeviation="4.2" />
+    </filter>
+  </defs>
+  <title>blockdiag</title>
+  <desc>actdiag {
+  browse -&gt; select -&gt; send -&gt; mix -&gt; control
+  control -&gt; status -&gt; update -&gt; take
+
+  lane user {
+    label = "User"
+    browse [label = "Browse Cocktail List"];
+    select [label = "Select Cocktail"];
+    take [label = "Cheers!"];
+  }
+  lane ui {
+    label = "JiggerU"
+    send [label = "Send Recipe"];
+    update
+  }
+  lane hal{
+    label = "HAL implementation"
+    mix [label = "Get Request"];
+    status
+  }
+  lane hardware {
+    label = "Miximus Prime"
+    control [label = "Control Hardware"];
+  }
+}
+</desc>
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="126" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="206" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="259" y="286" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="451" y="366" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="643" y="446" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="451" y="526" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="259" y="606" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="686" />
+  <rect fill="#ffff99" height="62" stroke="#ffff99" width="192" x="32" y="38" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="27" x="128.5" y="75">User</text>
+  <rect fill="#ffff99" height="62" stroke="#ffff99" width="192" x="224" y="38" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="44" x="320.0" y="76">JiggerU</text>
+  <rect fill="#ffff99" height="62" stroke="#ffff99" width="192" x="416" y="38" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="116" x="512.0" y="76">HAL implementation</text>
+  <rect fill="#ffff99" height="62" stroke="#ffff99" width="192" x="608" y="38" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="84" x="704.0" y="75">Miximus Prime</text>
+  <rect fill="none" height="702" stroke="gray" width="768" x="32" y="38" />
+  <path d="M 32 100 L 800 100" fill="none" stroke="gray" />
+  <path d="M 224 38 L 224 740" fill="none" stroke="gray" />
+  <path d="M 416 38 L 416 740" fill="none" stroke="gray" />
+  <path d="M 608 38 L 608 740" fill="none" stroke="gray" />
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="120" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="116" x="128.0" y="146">Browse Cocktail List</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="200" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="85" x="128.5" y="226">Select Cocktail</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="256" y="280" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="70" x="320.0" y="307">Send Recipe</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="448" y="360" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="69" x="512.5" y="387">Get Request</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="640" y="440" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="102" x="704.0" y="466">Control Hardware</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="448" y="520" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="34" x="512.0" y="546">status</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="256" y="600" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="39" x="320.5" y="627">update</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="680" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="44" x="128.0" y="706">Cheers!</text>
+  <path d="M 128 160 L 128 192" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="128,199 124,192 132,192 128,199" stroke="rgb(0,0,0)" />
+  <path d="M 128 240 L 128 260" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 128 260 L 320 260" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 320 260 L 320 272" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="320,279 316,272 324,272 320,279" stroke="rgb(0,0,0)" />
+  <path d="M 320 320 L 320 340" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 320 340 L 512 340" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 512 340 L 512 352" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="512,359 508,352 516,352 512,359" stroke="rgb(0,0,0)" />
+  <path d="M 512 400 L 512 420" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 512 420 L 704 420" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 704 420 L 704 432" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="704,439 700,432 708,432 704,439" stroke="rgb(0,0,0)" />
+  <path d="M 704 480 L 704 500" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 512 500 L 704 500" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 512 500 L 512 512" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="512,519 508,512 516,512 512,519" stroke="rgb(0,0,0)" />
+  <path d="M 512 560 L 512 580" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 320 580 L 512 580" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 320 580 L 320 592" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="320,599 316,592 324,592 320,599" stroke="rgb(0,0,0)" />
+  <path d="M 320 640 L 320 660" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 128 660 L 320 660" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 128 660 L 128 672" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="128,679 124,672 132,672 128,679" stroke="rgb(0,0,0)" />
+</svg>

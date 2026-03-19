@@ -9,6 +9,7 @@
 
     Supported extensions:
       .diag / .blockdiag  -> blockdiag
+      .actdiag            -> actdiag
       .excalidraw         -> excalidraw
       .puml / .plantuml   -> plantuml
       .mermaid            -> mermaid
@@ -38,6 +39,7 @@ param(
 $typeMap = @{
     diag       = 'blockdiag'
     blockdiag  = 'blockdiag'
+    actdiag    = 'actdiag'
     excalidraw = 'excalidraw'
     puml       = 'plantuml'
     plantuml   = 'plantuml'
@@ -77,14 +79,14 @@ foreach ($file in $files) {
     try {
         $body = [System.IO.File]::ReadAllBytes($file.FullName)
 
-        $response = Invoke-RestMethod `
+        $response = Invoke-WebRequest `
             -Uri $endpoint `
             -Method Post `
             -ContentType 'text/plain' `
             -Body $body `
             -ErrorAction Stop
 
-        [System.IO.File]::WriteAllText($outFile, $response, [System.Text.Encoding]::UTF8)
+        [System.IO.File]::WriteAllText($outFile, $response.Content, [System.Text.Encoding]::UTF8)
         Write-Host "        OK" -ForegroundColor Green
         $ok++
     }

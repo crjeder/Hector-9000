@@ -1,8 +1,9 @@
 name: Kroki Render
+
 on:
   push:
     paths:
-      - 'diagrams/**' # Beobachtet einen speziellen Ordner für Diagramme
+      - 'diagrams/**'
 
 jobs:
   kroki-render:
@@ -11,17 +12,30 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Kroki Render Action
-        uses: yuzutech/kroki-github-action@v1.1.0
-        with:
-          direction: "./diagrams" # Wo liegen deine Quelldateien?
-          output: "./images"      # Wo sollen die Bilder gespeichert werden?
-          format: "svg"           # SVG ist am schärfsten für GitHub
+      - name: Render diagrams via Kroki API
+        run: |
+          mkdir -p images
+          for file in diagrams/*; do
+            ext="${file##*.}"
+            name="$(basename "${file%.*}")"
+            case "$ext" in
+              diag|blockdiag) type="blockdiag" ;;
+              excalidraw)     type="excalidraw" ;;
+              puml|plantuml)  type="plantuml" ;;
+              mermaid)        type="mermaid" ;;
+              *)              echo "Skipping unknown type: $file"; continue ;;
+            esac
+            echo "Rendering $file ($type) -> images/${name}.svg"
+            curl -sf -X POST "https://kroki.io/${type}/svg" \
+              -H "Content-Type: text/plain" \
+              --data-binary @"$file" \
+              -o "images/${name}.svg"
+          done
 
       - name: Commit & Push changes
         run: |
           git config --local user.email "crjeder@gmail.com"
           git config --local user.name "GitHub Action"
-          git add images/*
+          git add images/*.svg
           git commit -m "Update diagrams via Kroki" || exit 0
           git push

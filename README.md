@@ -21,3 +21,6 @@ It is controlled by an implementation of `CocktailBotHAL` all the `control logic
 
 ## UI Workflow
 ![UI Workflow](images/UI-Workflow.svg)
+
+## Links
+- https://www.cocktailberry.org/de
